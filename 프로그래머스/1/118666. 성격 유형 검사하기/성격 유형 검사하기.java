@@ -38,10 +38,8 @@ class Solution {
             if (choices[i] == 4) {
                 continue;
             } else if (choices[i] < 4) {
-                // 앞에거에 점수
                 calculateScore(survey[i].charAt(0), choices[i]);
             } else if (choices[i] > 4) {
-                //뒤에거에 점수
                 calculateScore(survey[i].charAt(1), choices[i]);
             }
         }
