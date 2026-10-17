@@ -20,10 +20,14 @@ class Solution {
                                     check = false;
                                 }
                             }
+                            
+                            if (!check) {
+                                break;
+                            }
                         }
                         
                         if (check) {
-                                return size;
+                            return size;
                         }
                     }
                 }
